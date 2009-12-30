@@ -4,10 +4,14 @@
 	<meta charset="utf-8" />
 	<title>{{ page.title }}</title>
 	<meta name="Author" content="Matthew Pietz" />
+
+	<link rel="stylesheet" type="text/css" href="/site/layout.css" />
 </head>
 <body>
 
-{{ content }}
+<div class="body {{page.class}}">
+	{{ content }}
+</div>
 
 <a href="http://github.com/sirlancelot"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 

@@ -1,5 +1,5 @@
 ---
-layout: master
+layout: post
 title: Working With Jekyll on GitHub
 ---
 
