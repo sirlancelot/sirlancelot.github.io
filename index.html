@@ -1,5 +1,12 @@
 ---
 layout: master
-title: Matt's Thoughts
+title: Matthew Pietz
 ---
-<h1>It Works!</h1>
+<h1>Personal Website</h1>
+
+<h2>Posts</h2>
+<ul class="posts">
+	{% for post in site.posts %}
+	<li><span>{{post.date | date_to_string}}</span> &raquo; <a href="{{post.url}}">{{post.title}}</a></li>
+	{% endfor %}
+</ul>
