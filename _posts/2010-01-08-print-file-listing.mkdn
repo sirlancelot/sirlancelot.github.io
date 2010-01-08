@@ -10,3 +10,11 @@ A few people have asked me if it's possible to print a listing of all the files 
 First, the wrong way: Most obviously, you could just use the Print Screen button your Windows keyboard or the "Grab" utility application on a Mac. But what if your folder listing is longer than you can show on your screen? This will not work and you may find yourself taking multiple screenshots at different scroll positions, cutting and pasting them together... It's just not worth that.
 
 Fortunately, there's a better way and all you need is Firefox.
+
+  - Navigate to the folder listing you want to print. ![Windows 7 Address bar][pic-0]
+  - Copy the address.
+  - Open Firefox, and in the Firefox address bar, first type `file:///`, and the paste the address after it. Yes, you should have 3 slashes ("/") and not the typical 2.
+  - Press enter and you should now see an "Index of ..." on the page in Firefox. From here, just print the page.
+
+
+  [pic-0]: /images/address-bar.png
