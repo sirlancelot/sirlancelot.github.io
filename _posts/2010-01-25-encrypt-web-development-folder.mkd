@@ -1,0 +1,55 @@
+---
+layout: post
+title: How to encrypt your `Sites` folder on a Mac
+---
+
+## {{ page.title }}
+
+After working for a few years on web development I realized that during
+development I store a lot of passwords in plain text on my computer. Being
+quite paranoid this naturally caused problems. I didn't think much of it until
+I found out how to create an encrypted disk image. I've first accomplished this
+on my Mac at work but will be documenting how to do so on other platforms
+shortly.
+
+Note: On the "Pick..." lines, I've included what I chose in braces {}.
+
+### Mac 10.5+.x
+
+#### Create the Encrypted Container
+
+  1. Open "Disk Utility" and click "New Image" in the toolbar.
+  2. Pick a location to save the Image file. {~/Documents/Development
+     Sites.sparsebundle}
+  3. Pick a Volume Name. {DevRoot}
+  4. Pick a Volume Size. {Custom -> 8 GB}
+  5. Pick a Volume Format. {Mac OS Extended (Case-sensitive, Journaled)}
+  6. For Encryption, use "256-bit AES Encryption"
+  7. For Partitions, use "Single Partition - GUID Partition Map"
+  8. For Image Format, use "Sparse Bundle Disk Image"
+  9. Click "Create"
+ 10. You will be asked to create a password for the image, pick a really long
+     password and then click "Ok"
+
+I checked "Remember password..." so that I don't have to type it in every time
+I restart my computer (My keychain password is relatively secure). If you don't
+use the image on a daily basis, leave this unchecked for security.
+
+Once the container is created it is automatically mounted. Unmount it by
+dragging the icon to the trash and then remount it to make sure you remembered
+the password correctly.
+
+#### Create Auto-mount script
+
+  1. Create a new file and paste the following code in to the file: <script src="http://gist.github.com/286375.js?file=attach-disk-image.sh"></script>
+  2. Change the "SOURCE" variable to match your environment.
+  2. Save the file with a `.sh` extension somewhere in your home folder.
+  3. Open "System Preferences" and click "Accounts"
+  4. Click on your user account.
+  5. Click the "Login Items" tab.
+  6. Click the "+" and then find the file you just created.
+  7. Log-out and back in again and you should now have your `Sites` folder transformed and linked to the encrypted partition.
+
+#### Hide the desktop icon
+
+TODO
