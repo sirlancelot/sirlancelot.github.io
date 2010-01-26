@@ -5,11 +5,16 @@
 	<title>{{ page.title }}</title>
 	<meta name="Author" content="Matthew Pietz" />
 
+	<link rel="stylesheet" type="text/css" href="/site/blueprint/screen.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="/site/blueprint/print.css" media="print" />
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection" />
+	<![endif]-->
 	<link rel="stylesheet" type="text/css" href="/site/layout.css" />
 </head>
 <body>
 
-<div class="body {{page.class}}">
+<div class="container {{page.class}}">
 	{{ content }}
 </div>
 
