@@ -18,18 +18,18 @@ Note: On the "Pick..." lines, I've included what I chose in braces {}.
 
 #### Create the Encrypted Container
 
-  1. Open "Disk Utility" and click "New Image" in the toolbar.
-  2. Pick a location to save the Image file. {~/Documents/Development
-     Sites.sparsebundle}
-  3. Pick a Volume Name. {DevRoot}
-  4. Pick a Volume Size. {Custom -> 8 GB}
-  5. Pick a Volume Format. {Mac OS Extended (Case-sensitive, Journaled)}
-  6. For Encryption, use "256-bit AES Encryption"
-  7. For Partitions, use "Single Partition - GUID Partition Map"
-  8. For Image Format, use "Sparse Bundle Disk Image"
-  9. Click "Create"
- 10. You will be asked to create a password for the image, pick a really long
-     password and then click "Ok"
+1. Open "Disk Utility" and click "New Image" in the toolbar.
+2. Pick a location to save the Image file. {~/Documents/Development
+   Sites.sparsebundle}
+3. Pick a Volume Name. {DevRoot}
+4. Pick a Volume Size. {Custom -> 8 GB}
+5. Pick a Volume Format. {Mac OS Extended (Case-sensitive, Journaled)}
+6. For Encryption, use "256-bit AES Encryption"
+7. For Partitions, use "Single Partition - GUID Partition Map"
+8. For Image Format, use "Sparse Bundle Disk Image"
+9. Click "Create"
+1. You will be asked to create a password for the image, pick a really long
+   password and then click "Ok"
 
 I checked "Remember password..." so that I don't have to type it in every time
 I restart my computer (My keychain password is relatively secure). If you don't
@@ -41,14 +41,16 @@ the password correctly.
 
 #### Create Auto-mount script
 
-  1. Create a new file and paste the following code in to the file: <script src="http://gist.github.com/286375.js?file=attach-disk-image.sh"></script>
-  2. Change the "SOURCE" variable to match your environment.
-  2. Save the file with a `.sh` extension somewhere in your home folder.
-  3. Open "System Preferences" and click "Accounts"
-  4. Click on your user account.
-  5. Click the "Login Items" tab.
-  6. Click the "+" and then find the file you just created.
-  7. Log-out and back in again and you should now have your `Sites` folder transformed and linked to the encrypted partition.
+1. Create a new file and paste the following code in to the file:
+   <script src="http://gist.github.com/286375.js?file=attach-disk-image.sh"></script>
+2. Change the "SOURCE" variable to match your environment.
+2. Save the file with a `.sh` extension somewhere in your home folder.
+3. Open "System Preferences" and click "Accounts"
+4. Click on your user account.
+5. Click the "Login Items" tab.
+6. Click the "+" and then find the file you just created.
+7. Log-out and back in again and you should now have your `Sites` folder
+   transformed and linked to the encrypted partition.
 
 #### Hide the desktop icon
 
