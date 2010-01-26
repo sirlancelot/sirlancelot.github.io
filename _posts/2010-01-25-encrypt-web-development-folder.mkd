@@ -42,7 +42,7 @@ the password correctly.
 #### Create Auto-mount script
 
 1. Create a new file and paste the following code in to the file:
-   <script src="http://gist.github.com/286375.js?file=attach-disk-image.sh"></script>
+   <script src="http://gist.github.com/286375.js?file=attach-disk-image.sh"> </script>
 2. Change the "SOURCE" variable to match your environment.
 2. Save the file with a `.sh` extension somewhere in your home folder.
 3. Open "System Preferences" and click "Accounts"
