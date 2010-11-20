@@ -3,8 +3,6 @@ layout: post
 title: Could you just like, bring out your mug?
 ---
 
-## {{ page.title }}
-
 <object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/embedPlayer" width="100%" height="64"><param name="movie" value="https://clients4.google.com/voice/embed/embedPlayer" /><param name="wmode" value="transparent" /><param name="FlashVars" value="u=11715860658734244170&k=AHwOX_Cc09ho9CpXa0ypyEatX1lDb7wLIMg8Qo6AlOzC9WWrNdl5bEtZyWTVKG2_LRfUcWj-_68ilYHuz_BEOvz2FyQaO5cBFJ-QpNBX2MXclExevsHLXN_ujWFIY4Edk5DxDlan8I4yhiYB1on48tFNHjyiUyY0L9eMYQs7n0xt2uDMmxocKC8&baseurl=https://clients4.google.com/voice&autoPlay=false&cap=Could%20you%20just%20like%2C%20bring%20out%20your%20mug%3F" /></object>
 
 A voicemail I got from Lisa.

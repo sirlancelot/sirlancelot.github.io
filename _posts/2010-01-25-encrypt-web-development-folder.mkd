@@ -3,8 +3,6 @@ layout: post
 title: How to encrypt your `Sites` folder on a Mac
 ---
 
-## {{ page.title }}
-
 After working for a few years on web development I realized that during
 development I store a lot of passwords in plain text on my computer. Being
 quite paranoid this naturally caused problems. I didn't think much of it until
