@@ -9,10 +9,9 @@ First, the wrong way: Most obviously, you could just use the Print Screen button
 
 Fortunately, there's a better way and all you need is Firefox.
 
-  - Navigate to the folder listing you want to print. ![Windows 7 Address bar][pic-0]
-  - Copy the address.
-  - Open Firefox, and in the Firefox address bar, first type `file:///`, and the paste the address after it. Yes, you should have 3 slashes ("/") and not the typical 2.
-  - Press enter and you should now see an "Index of ..." on the page in Firefox. From here, just print the page.
-
+- Navigate to the folder listing you want to print. ![Windows 7 Address bar][pic-0]
+- Copy the address.
+- Open Firefox, and in the Firefox address bar, first type `file:///`, and the paste the address after it. Yes, you should have 3 slashes ("/") and not the typical 2.
+- Press enter and you should now see an "Index of ..." on the page in Firefox. From here, just print the page.
 
   [pic-0]: /images/address-bar.png
