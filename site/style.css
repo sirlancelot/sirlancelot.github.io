@@ -20,10 +20,10 @@ ul#social-icons {
 	text-indent: -900em;
 	background-repeat: no-repeat;
 }
-#social-icons .delicious a { background-image: url("site/icons/delicious.png"); }
-#social-icons .digg a { background-image: url("site/icons/digg.png"); }
-#social-icons .lastfm a { background-image: url("site/icons/lastfm.png"); }
-#social-icons .twitter a { background-image: url("site/icons/twitter.png"); }
+#social-icons .delicious a { background-image: url("icons/delicious.png"); }
+#social-icons .digg a { background-image: url("icons/digg.png"); }
+#social-icons .lastfm a { background-image: url("icons/lastfm.png"); }
+#social-icons .twitter a { background-image: url("icons/twitter.png"); }
 
 .container h1,
 .container h2,
