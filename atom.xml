@@ -19,8 +19,10 @@ layout: nil
 	<title>{{ post.title }}</title>
 	<link href="http://matpie.com{{ post.url }}/"/>
 	<updated>{{ post.date | date_to_xmlschema }}</updated>
-	<id>http://matpie.com/{{ post.id }}/</id>
-	<content type="html">{{ post.content | xml_escape }}</content>
+	<id>http://matpie.com{{ post.id }}/</id>
+	<content type="html">{{ post.content | xml_escape }}
+		{{ '<p style="padding:5px;background:#ddd;border:1px solid #ccc;clear:both;">This post originally appeared on <a href="http://matpie.com/">matpie.com</a>. You may not copy any portion of this content without direct permission from the author.</p>' | xml_escape }}
+	</content>
 </entry>
 {% endfor %}
 
