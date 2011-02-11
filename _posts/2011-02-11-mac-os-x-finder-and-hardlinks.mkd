@@ -1,0 +1,8 @@
+---
+layout: post
+title: Mac OS X Finder and Hardlinks
+---
+
+<a href="http://i.imgur.com/yOQTR.png"><img src="http://i.imgur.com/yOQTRl.jpg" alt="" title="Hosted by imgur.com" /></a>
+
+Finder has never been good at calculating file size. Especially since Snow Leopard, where Apple stupidly decided it was going to calculate file sizes using metric kilobytes instead of binary kilobytes.
