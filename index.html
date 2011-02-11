@@ -5,29 +5,14 @@ class: home
 ---
 <h1>Matthew Pietz</h1>
 
-<div class="span-8">
+<div class="span-12">
 	<h2>Blog</h2>
 	<ul class="posts">
 		{% for post in site.posts %}
 		<li><span>{{post.date | date_to_string}}</span> &raquo; <a href="{{post.url}}">{{post.title}}</a></li>
 		{% endfor %}
 	</ul>
-</div>
 
-<div class="span-8">
-	<h2>Social</h2>
-	<ul id="social-icons">
-		<li class="delicious"><a href="http://delicious.com/flyingmeteor">flyingmeteor on del.icio.us</a></li>
-		<li class="digg"><a href="http://digg.com/flyingmeteor">flyingmeteor on digg</a></li>
-		<li class="lastfm"><a href="http:/last.fm/flyingmeteor">flyingmeteor last.fm</a></li>
-		<li class="twitter"><a href="http://twitter.com/sirlancelot">sirlancelot on twitter</a></li>
-	</ul>
-	<ul id="twitter_update_list"></ul>
-	<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-	<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/sirlancelot.json?callback=twitterCallback2&amp;count=10"></script>
-</div>
-
-<div class="span-8 last">
 	<h2>Contact</h2>
 	<object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85">
 		<param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" />
@@ -36,3 +21,16 @@ class: home
 	</object>
 </div>
 
+<div class="span-12 last">
+	<h2>Social</h2>
+	<ul id="social-icons">
+		<li class="delicious"><a href="http://delicious.com/flyingmeteor">flyingmeteor on del.icio.us</a></li>
+		<li class="digg"><a href="http://digg.com/flyingmeteor">flyingmeteor on digg</a></li>
+		<li class="lastfm"><a href="http:/last.fm/flyingmeteor">flyingmeteor last.fm</a></li>
+		<li class="twitter"><a href="http://twitter.com/sirlancelot">sirlancelot on twitter</a></li>
+	</ul>
+	<ul id="twitter_update_list"></ul>
+</div>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/sirlancelot.json?callback=twitterCallback2&amp;count=10"></script>
