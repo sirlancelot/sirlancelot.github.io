@@ -2,3 +2,12 @@
 	position: relative;
 	z-index: 1;
 }
+
+.comments {
+	width: 290px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.comments hr { display: none; }
+
+

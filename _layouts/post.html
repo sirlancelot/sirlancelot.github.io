@@ -3,15 +3,17 @@ layout: master
 class: post
 ---
 
-<div class="post">
-
-<h2>{{ page.title }}</h2>
-
-{{ content }}
-
+<div class="title span-24 last">
+	<h2>{{ page.title }}</h2>
 </div>
 
-<div class="comments">
-<hr/>
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/mpietz-github/embed.js"></script><noscript><a href="http://disqus.com/forums/mpietz-github/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<div class="post span-16">
+	{{ content }}
+</div>
+
+<div class="comments span-8 last">
+	<hr/>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript" src="http://disqus.com/forums/mpietz-github/embed.js"></script>
+	<noscript><a href="http://disqus.com/forums/mpietz-github/?url=ref">View the discussion thread.</a></noscript>
 </div>
