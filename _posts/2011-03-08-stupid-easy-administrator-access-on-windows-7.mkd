@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Stupid-easy Administrator access on Windows 7"
+published: true
+---
+
+We have frequently been running in to [this error][kb] on Windows 7: "The trust relationship between this workstation and the primary domain failed." The error appears during login after you type in your username and password and hit enter.
+
+Our solution in the past was to reload the machine from our standard image for a few reasons:
+
+- There is no way to login once this has happened.
+- The default Administrator user is disabled by default on Windows 7.
+- We had already spent several hours trying to diagnose the problem whereas reloading it took 30 minutes.
+
+This problem has happened frequently enough to where I decided to revisit Google to see if anyone else has found a way around this. [The result][fix] that I found was laughably easy. Here it is:
+
+1. Boot with a Windows 7 Install or Repair Disc
+1. If using an Install Disc, click Repair Computer in the bottom left-hand corner.
+1. Select your OS from the list after it populates.
+1. Select Command Prompt.
+1. Type the following commands, hitting enter after each:
+    - `cd /d C:\Windows\System32`
+    - `move sethc.exe \`
+    - `copy cmd.exe sethc.exe`
+1. Restart the computer normally.
+1. When the Login screen appears, hit the Shift key 5 times.
+1. At the Command Prompt, type the following commands:
+    - `net user Administrator *` (then set a password)
+    - `net user Administrator /active:yes`
+    - `move \sethc.exe`
+1. Close the Command Prompt and login as Administrator.
+1. Detach the domputer from the domain and restart.
+1. Login as Administrator again and re-attach the computer to the domain.
+1. Restart and you're done!
+
+Stupid easy right?
+
+What this is doing is taking advantage of the Ease of Access feature during login. We're replacing the Ease of Access program (`sethc.exe`) with a copy of the Command Prompt (`cmd.exe`). In this way, when we hit the Shift key 5 times, we get the command prompt.
+
+  [kb]:  http://support.microsoft.com/kb/976494
+  [fix]: http://answers.microsoft.com/en-us/windows/forum/windows_7-security/how-to-accescreate-my-administrator-account/44531fd2-ca7f-41b7-8d9b-3ba4b37a895f
