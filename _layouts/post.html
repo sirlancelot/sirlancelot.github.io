@@ -1,13 +1,11 @@
 ---
 layout: master
-class: post
 ---
 
-<div class="title span-24 last">
-	<h2><a href="/" title="Back to home" class="home">&laquo;</a> {{ page.title }}</h2>
-</div>
-
 <div class="post span-16">
+	<div class="date">
+		{{ page.date | date: '<span class="day">%d</span> <span class="month">%b</span> <span class="year">%Y</span>' }}
+	</div>
 	{{ content }}
 </div>
 
