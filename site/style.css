@@ -25,8 +25,8 @@ ul#social-icons {
 #social-icons .delicious a { background-image: url("icons/delicious.png"); }
 #social-icons .digg a { background-image: url("icons/digg.png"); }
 #social-icons .lastfm a { background-image: url("icons/lastfm.png"); }
-#social-icons .rss a { background-image: url("icons/rss.png"); }
 #social-icons .twitter a { background-image: url("icons/twitter.png"); }
+#social-icons .google a { background-image: url("icons/g+.png"); }
 
 .container h1,
 .container h2,
@@ -34,4 +34,33 @@ ul#social-icons {
 	text-shadow: 1px 1px 3px #aaa;
 }
 
-.title a.home { text-decoration: none; }
+#head .home { text-decoration: none; }
+
+.post .date {
+	width: 50px;
+	float: left;
+	margin-right: 10px;
+	background: #06C;
+	border: 1px solid #000;
+	border-radius: 8px;
+}
+
+.post .date span {
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+
+.post .date .year {
+	color: #FFF;
+}
+
+.post .date .month {
+	background: #FFF;
+	font-size: 110%;
+}
+
+.post .date .day {
+	color: #FFF;
+	font-size: 130%;
+}

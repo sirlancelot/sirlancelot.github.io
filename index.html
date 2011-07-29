@@ -3,13 +3,11 @@ layout: master
 title: Matthew Pietz
 class: home
 ---
-<h1>Matthew Pietz</h1>
-
 <div class="span-12">
 	<h2>Blog</h2>
 	<ul class="posts">
 		{% for post in site.posts %}
-		<li><span>{{post.date | date_to_string}}</span> &raquo; <a href="{{post.url}}">{{post.title}}</a></li>
+		<li><span>{{post.date | date_to_string}}</span> &raquo; <a href="{{post.url}}">{{post.title}}</a></li><!-- {{post.date}} -->
 		{% endfor %}
 	</ul>
 
@@ -27,8 +25,8 @@ class: home
 		<li class="delicious"><a href="http://delicious.com/flyingmeteor">del.icio.us</a></li>
 		<li class="digg"><a href="http://digg.com/flyingmeteor">digg</a></li>
 		<li class="lastfm"><a href="http:/last.fm/flyingmeteor">last.fm</a></li>
-		<li class="rss"><a href="http://feeds.feedburner.com/sirlancelot">rss feed</a></li>
 		<li class="twitter"><a href="http://twitter.com/sirlancelot">twitter</a></li>
+		<li class="google"><a href="https://www.google.com/profiles/sirlancelot" rel="me">google+</a></li>
 	</ul>
 	<ul id="twitter_update_list"></ul>
 </div>
