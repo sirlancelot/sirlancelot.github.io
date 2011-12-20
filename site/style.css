@@ -40,27 +40,27 @@ ul#social-icons {
 	width: 50px;
 	float: left;
 	margin-right: 10px;
-	background: #06C;
-	border: 1px solid #000;
-	border-radius: 8px;
 }
 
 .post .date span {
 	display: block;
 	text-align: center;
 	font-weight: bold;
+	background: rgba(7,7,7,0.3);
 }
 
 .post .date .year {
 	color: #FFF;
+	border-radius: 0 0 8px 8px;
 }
 
 .post .date .month {
-	background: #FFF;
+	background: inherit;
 	font-size: 110%;
 }
 
 .post .date .day {
 	color: #FFF;
 	font-size: 130%;
+	border-radius: 8px 8px 0 0;
 }

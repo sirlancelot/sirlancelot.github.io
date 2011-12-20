@@ -1,3 +1,14 @@
+body {
+	background: url("body-background.png");
+}
+#head {
+	background-color: rgb(170,170,170);
+	background-color: rgba(7,7,7,0.3);
+	border-radius: 0 0 8px 8px;
+}
+#head h1 {
+	padding: 5px;
+}
 .container {
 	position: relative;
 	z-index: 1;
@@ -9,5 +20,4 @@
 	margin-left: 10px;
 }
 .comments hr { display: none; }
-
 
