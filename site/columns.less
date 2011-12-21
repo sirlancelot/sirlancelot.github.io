@@ -1,0 +1,36 @@
+/* Achieve an awesome layout by manipulating a few variables */
+@width: 960px;
+.setColumnWidth (@columns: 4, @margin: 0px) {
+    @totalMargin: (@columns - 1) * @margin;
+    @columnWidth: (@width - @totalMargin) / @columns;
+    width: @columnWidth;
+	margin-left: @margin;
+}
+.setBigColumnWidth (@columns: 4, @margin: 0px, @combine: 2) {
+	@totalMargin: (@columns - 1) * @margin;
+    @columnWidth: (@width - @totalMargin) / @columns;
+	@wideColumn: (@columnWidth * @combine) + (@margin * (@combine - 1));
+	width: @wideColumn;
+	margin-left: @margin;
+}
+.body {
+    clear: both;
+    position: relative;
+    margin: 0px auto;
+    width: @width;
+}
+.col {
+    float: left;
+    margin-bottom: 8px;
+}
+.full { width: @width; }
+.grail-small { .setColumnWidth(4, 8px); }
+.grail-medium { .setBigColumnWidth(4, 8px); }
+.grail-large { .setBigColumnWidth(4, 8px, 3); }
+.three { .setColumnWidth(3, 9px); }
+.first { margin-left: 0; }
+
+@media only screen and (max-width: 700px) {
+    .body { width: inherit; }
+    .col { width: 100%; margin-left: 0; }
+}

@@ -1,0 +1,41 @@
+.nav {
+    list-style: none;
+	width: 100%;
+    text-align: center;
+}
+.nav li { display: inline-block; }
+.nav ul { text-align: left; }
+.nav li li { display: block; }
+.nav a {
+	display: block;
+	text-decoration: none;
+    line-height: 1.5;
+    padding: 0 1em;
+}
+.nav a:hover {
+	text-decoration: underline;
+}
+
+/* Style the dropdown */
+.nav ul {
+    display: none;
+	background: #fff;
+	list-style: none;
+	position: absolute;
+    .drop-shadow(3px, 3px, 5px, 0.8);
+}
+.nav ul a {
+	white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.nav li:hover ul { /* Display the dropdown on hover */
+	display: block;
+}
+.nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	text-decoration: underline;
+}
+.nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration: none;
+}
+.nav li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background: #999;
+}
