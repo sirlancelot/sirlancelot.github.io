@@ -1,17 +1,15 @@
 ---
 layout: master
 ---
-
-<div class="post span-16">
-	<div class="date">
-		{{ page.date | date: '<span class="day">%d</span> <span class="month">%b</span> <span class="year">%Y</span>' }}
+<div class="body post">
+	<p class="meta">{{page.date | date_to_long_string}}</p>
+	<div class="col grail-large content first">
+		{{ content }}
 	</div>
-	{{ content }}
-</div>
-
-<div class="comments span-8 last">
-	<hr/>
-	<div id="disqus_thread"></div>
-	<script type="text/javascript" src="http://disqus.com/forums/mpietz-github/embed.js"></script>
-	<noscript><a href="http://disqus.com/forums/mpietz-github/?url=ref">View the discussion thread.</a></noscript>
+	<div id="comments" class="col grail-small">
+		<hr/>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript" src="http://disqus.com/forums/mpietz-github/embed.js"></script>
+		<noscript><a href="http://disqus.com/forums/mpietz-github/?url=ref">View the discussion thread.</a></noscript>
+	</div>
 </div>

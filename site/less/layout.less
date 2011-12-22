@@ -1,0 +1,103 @@
+@import url("reset.less");
+@import url("mixins.less");
+@import url("columns.less");
+@import url("navigation.less");
+@import url("typography.less");
+
+body {
+    background-color: #474c54;
+    background-image: url("content-background.png"),url("body-background.png");
+    background-repeat: repeat-y, repeat;
+    background-position: center top;
+    color: #aaa;
+    line-height: 1.5;
+}
+a,:link {
+    color: #5ED0BD;
+    text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+h1,h2,h3,h4,h5 {
+    color: #ccc;
+    background: url("header-background.png");
+    margin: 8px 0 0;
+    padding: 0 5px;
+}
+p,ul,ol {
+    padding: 0 5px;
+    margin-bottom: 0.9em;
+}
+li p { padding: 0; }
+li { margin-left: 3em; }
+ul { list-style: disc; }
+ol { list-style: decimal; }
+li ul { list-style: circle; }
+li ol { list-style: lower-alpha; }
+
+.status-updates li,
+.posts li { margin: 0; list-style: none; }
+
+#head h1 { margin: 0; }
+
+.post h2 a,
+.post .meta a { color: inherit; }
+.post .meta {
+    background-color: #666;
+    color: #333;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+}
+.post img[align=left] { margin-right: 4px; }
+.post img[align=right] { margin-left: 4px; }
+.post .more,
+.meta a {
+    white-space: nowrap;
+    font-style: italic;
+}
+
+.social-icons {
+    list-style: none;
+    overflow: hidden;
+	margin: 1em 0;
+	padding: 0;
+}
+.social-icons li {
+	float: left;
+	width: 24px;
+	height: 24px;
+	overflow: hidden;
+	margin: 0 3px;
+}
+.social-icons li:first-child { margin: 0; }
+.social-icons a {
+	display: block;
+	overflow: hidden;
+	width: 24px;
+	height: 24px;
+	text-indent: -900em;
+	background-repeat: no-repeat;
+}
+.social-icons .delicious a { background-image: url("icons/delicious.png"); }
+.social-icons .digg a { background-image: url("icons/digg.png"); }
+.social-icons .lastfm a { background-image: url("icons/lastfm.png"); }
+.social-icons .twitter a { background-image: url("icons/twitter.png"); }
+.social-icons .google a { background-image: url("icons/g+.png"); }
+
+.callme {
+    width: 230px;
+    margin: 0 2px;
+}
+
+.status-updates li {
+    font-size: 70%;
+}
+.status-updates li:first-child {
+    font-size: 100%;
+}
+
+
+.disclaimer {
+    font-size: 85%;
+    font-style: italic;
+    font-variant: small-caps;
+}

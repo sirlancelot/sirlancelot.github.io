@@ -7,28 +7,26 @@
 	<link rel="alternate" href="http://feeds.feedburner.com/sirlancelot" title="Matthew Pietz" type="application/atom+xml" />
 
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-	<link rel="stylesheet" type="text/css" href="/site/blueprint/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="/site/blueprint/print.css" media="print" />
-	<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
 	<link rel="stylesheet" type="text/css" href="/site/layout.css" />
-	<link rel="stylesheet" type="text/css" href="/site/style.css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
 	<script src="http://stats.matpie.com/?js" type="text/javascript"></script>
 </head>
 <body class="{{page.class}}">
-
-<a href="http://github.com/sirlancelot" style="position: absolute; top: 0; right: 0; border: 0;"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
-
-<div class="container">
-	<div id="head">
+	<div class="body" id="head">
 		<h1>{% if page.url != '/index.html' %}<a href="/" title="Back to home" class="home">&laquo;</a> {% endif %}{{ page.title }}</h1>
 	</div>
-	<div id="content">
-		{{ content }}
+	{{ content }}
+	<div class="body" id="footer">
+		<div class="col grail-small first">
+			<p class="disclaimer"><a href="https://plus.google.com/114494898460183717157?rel=author" rel="author">Matthew Pietz</a>
+			is the author and/or curator of all content on this site.
+			Please link to my content rather than steal it and I'll do the
+			same for you. Thanks :)</p>
+		</div>
+		<div class="col grail-large">
+			<img src="http://placekitten.com/g/718/90">
+		</div>
 	</div>
-	<div id="footer">
-		<p><a href="https://plus.google.com/114494898460183717157?rel=author" rel="author">Matthew Pietz</a> is the author and/or curator of all content on this site. Please link to my content rather than steal it and I'll do the same for you. Thanks :)</p>
-	</div>
-</div>
-
 </body>
 </html>

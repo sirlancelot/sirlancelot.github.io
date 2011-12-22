@@ -29,8 +29,12 @@
 .grail-large { .setBigColumnWidth(4, 8px, 3); }
 .three { .setColumnWidth(3, 9px); }
 .first { margin-left: 0; }
+#footer .col { margin-bottom: 0; }
+
+#comments hr { display: none; }
 
 @media only screen and (max-width: 700px) {
     .body { width: inherit; }
     .col { width: 100%; margin-left: 0; }
+    #comments hr { display: block; }
 }
