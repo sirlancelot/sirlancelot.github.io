@@ -10,7 +10,7 @@ class: home
 			<a href="{{post.url}}"><img src="http://lorempixel.com/g/300/150" align="left"></a>
 			<p class="meta">{{post.date | date_to_long_string}} | <a href="{{post.url}}#comments" class="comments">comments</a></p>
 			<p>{{post.content | strip_html | truncatewords:75}}
-			   <a class="more" href="#">Read the Rest &raquo;</a></p>
+			   <a class="more" href="{{post.url}}">Read the Rest &raquo;</a></p>
 		</div>
 	</div>
 {% endfor %}
@@ -22,7 +22,7 @@ class: home
 				<a href="{{post.url}}"><img src="http://lorempixel.com/g/150/150" align="left"></a>
 				<p class="meta">{{post.date | date_to_string}} | <a href="{{post.url}}#comments" class="comments">comments</a></p>
 				<p>{{post.content | strip_html | truncatewords:75}}
-				   <a class="more" href="#">Read the Rest &raquo;</a></p>
+				   <a class="more" href="{{post.url}}">Read the Rest &raquo;</a></p>
 			</div>
 {% endfor %}
 			<div class="col grail-medium first">
