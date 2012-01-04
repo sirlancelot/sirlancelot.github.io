@@ -4,8 +4,11 @@ title: "Software I use almost daily"
 published: true
 ---
 
-I can't praise [Ninite](http://ninite.com/) enough when it comes to software maintenance. It solves nearly all of the problems I encounter when I install or update my third-party applications.
+I can't praise [Ninite][] enough when it comes to software maintenance. It solves nearly all of the problems I encounter when I install or update my third-party applications.
 
 Below is a list of all the Ninite applications I use on an almost daily basis. You can pick and choose the ones you like, then download the installer. Keep the installer around and in a well-known location. You can run it again as many times as you want and it will only update applications that need to be updated. The up-to-date applications will be skipped and you can move on with your life.
 
-<iframe src="http://ninite.com/embed?only=air-ccleaner-chrome-cutepdf-defraggler-dropbox-essentials-firefox-flash-flashie-foobar-imgburn-itunes-java-putty-reader-sevenzip-silverlight-steam-vlc-winscp" style="border:none;width:625px;height:960px"></iframe>
+[Check out my Ninite List][0]
+
+  [Ninite]: http://ninite.com/
+  [0]: http://ninite.com/?select=air-ccleaner-chrome-cutepdf-defraggler-dropbox-essentials-firefox-flash-flashie-foobar-imgburn-itunes-java-putty-reader-sevenzip-silverlight-steam-vlc-winscp
