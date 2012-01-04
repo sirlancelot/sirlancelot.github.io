@@ -8,7 +8,12 @@ layout: master
 	</div>
 	<div class="col grail-small">
 		<hr/>
-		<div id="comments"></div>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var s = document.createElement('script'); s.async = true; s.type = 'text/javascript';
+			s.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		</script>
 		<noscript><a href="http://disqus.com/forums/mpietz-github/?url=ref">View the discussion thread.</a></noscript>
 	</div>
 </div>
