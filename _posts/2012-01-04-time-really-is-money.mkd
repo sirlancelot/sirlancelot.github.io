@@ -14,5 +14,5 @@ Obviously, this can be solved with a little math. Since everyone hates doing
 that, I created a little formula since you're too lazy to do it yourself.
 
 <div class="iframe">
-<iframe width="100%" height="170" src="http://instacalc.com/release/build547a/embed.html?c=V2FnZSA9ICQxMS43NXxUaW1lID0gMTB8UmVpbWJ1cnNlbWVudCA9ICQ1fFRhc2tfVmFsdWUgPSAkdGltZSAqIChXYWdlIC8gNjApIC8vIERvaW5nIHRoZSB0YXNrIGNvbnN1bWVzIHRoaXMgbXVjaCBtb25leXxBY3R1YWxfQmVuZWZpdCA9ICRyZWltYnVyc2VtZW50IC0gdGFza192YWx1ZSAvLyBZb3VyIGFjdHVhbCBiZW5lZml0IGFmdGVyIHRpbWUgc3BlbnQ&s=ssshh" style="max-width: 620px;"></iframe>
+<iframe width="100%" height="170" src="http://instacalc.com/release/build547a/embed.html?c=V2FnZSA9ICQxMS43NXxUaW1lID0gMTB8UmVpbWJ1cnNlbWVudCA9ICQ1fFRhc2tfVmFsdWUgPSAkdGltZSAqIChXYWdlIC8gNjApIC8vIERvaW5nIHRoZSB0YXNrIGNvbnN1bWVzIHRoaXMgbXVjaCBtb25leXxBY3R1YWxfQmVuZWZpdCA9ICRyZWltYnVyc2VtZW50IC0gdGFza192YWx1ZSAvLyBZb3VyIGFjdHVhbCBiZW5lZml0IGFmdGVyIHRpbWUgc3BlbnQ&s=ssshh" style="max-width: 620px;">&nbsp;</iframe>
 </div>
