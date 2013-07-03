@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Matthew Pietz</title>
+	<meta name="description" content="Personal Portfolio of Matthew Pietz." />
+	<meta name="author"      content="Matthew Pietz" />
+
+	<link rel="stylesheet" href="quine.css">
+</head>
+<body>
+	<nav><a href="about/">About Me</a> | <a href="blog/">Blog</a></nav>
+	
+	<h1>The Quine Website</h1>
+
+	<p>I first heard of quines long ago only after I'd been programming for a while. The concept intrigued me. It wasn't until I saw someone else apply it to a website that I decided that's what I was going to do for my own site.</p>
+
+	<p>Strictly speaking, this is only a spiritual quine. In a true quine the entire program outputs itself. For the sake of readability of this website, I'm using a few external resources which can be found in the actual source of this site.</p>
+
+	<!-- All content Copyright © Matthew Pietz unless otherwise noted. -->
+	<!-- The below external resources are where the magic happens.     -->
+	<script src="js/jquery.js"></script>
+	<script src="js/highlight.js"></script>
+	<script src="js/beautify.js"></script><script src="js/beautify-html.js" class="meta"></script><script src="js/beautify-css.js" class="meta"></script>
+	<script src="js/quine.js"></script>
+	<script>
+	(function ($) {
+		"use strict";
+		var output;
+
+		output = $('html').quine();  // Get all the HTML of this page, return DOM
+		output = output.beautify();  // Run it through JSBeautifier, return QuineString
+		//output = output.escape();    // Escape the string
+
+		document.body.innerHTML = "<pre><code id=\"content\" class=\"xml\">" + output.highlight() + "</code></pre>";
+	})(jQuery);
+	</script>
+
+</body>
+</html>
